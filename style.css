@@ -1,0 +1,249 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  } 
+
+:root{ 
+    --color1:  #f0f8ff;
+    --color2:  #fff;
+    --color3:  #8f9491;
+    --color4:  #082032;
+    --color5:  #000;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  .cabecalho{
+    height: 14vh;
+    background: #082032;
+  }
+
+  .logo{
+    color: aliceblue;
+  }
+
+  .navegacao{
+    display: flex;
+    height: 14vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .listaMenu{
+    display: flex;
+    list-style: none;
+    width: 64.3vw;
+    justify-content: space-evenly;
+    position: relative;
+    right: 11%;
+  }
+
+  .listaMenu a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+
+  .capa{
+ 
+  }
+
+  .textos{
+    display: flex;
+    align-items: center;
+  }
+
+  .fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .tituloPrincipal{
+    font-size: xxx-large;
+    line-height: 85%;
+  }
+
+  .subtitulo{
+
+  }
+
+  .btnCapa{
+
+  }
+
+  .slider{
+    width: 55vw;
+    max-width: 100vw;
+    height: 590px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+  width: max-content;
+  height: 100%;
+  display: flex;
+  transition: 1s;
+  position: absolute;
+}
+.slider .list img{
+  width: 60vw;
+  max-width: 100vw;
+  height: 112%;
+  object-fit: cover;
+}
+.slider .buttons{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .buttons button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slider .dots{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider .dots li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active{
+  width: 30px;
+}
+
+.buttons, .dots{
+  display: none;
+}
+
+.biografia{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26%;
+}
+
+.conteudoBio{
+  width: 40vw;
+}
+
+.tituloSecao{
+
+}
+
+.paragrafo{
+
+}
+
+.imgBio{
+  
+}
+
+.imgBio img{
+  height: 60vh
+}
+/*-------------------------------------------------------------------------*/
+.imoveis{
+  height: 115vh;
+  background-color: #082032;
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloImoveis{
+  text-align: center;
+  margin: 2%;
+}
+
+.gridContainer{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  height: 48vh;
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+.card img{
+  height: 29vh;
+  width: 24vw;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.text{
+
+}
+
+/*------------------------------------------------------------*/
+
+.serviços{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudoServicos{
+  width: 40vw;
+}
+
+.tituloServiços{
+
+}
+
+.containerCards{
+
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.cards{
+  border: 1px solid;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cards h3 button{
+
+}
