@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&family=Poiret+One&family=Prata&family=Prociono&display=swap');
+
+:root{ 
+    --color1:  aliceblue;
+    --color2:  #fff;
+    --color3:  #8f9491;
+    --color4:  #082032;
+    --color5:  #000;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .cabecalho{
+    display: flex;
+    height: 15vh;
+    width: 99vw;
+    align-items: center;
+    background: #082032c9;
+    position: fixed;
+    z-index: 2;
+  }
+  
+  .logo{
+    text-align: center;
+    line-height: 85%;
+    color: aliceblue;
+    font-family: 'Prata', serif;
+    font-weight: 100;
+    position: relative;
+    left: 5rem;
+  }
+
+  .barraMenu{
+
+  }
+
+  .menu{
+    display: flex;
+    list-style: none;
+    width: 85vw;
+    justify-content: end;
+    gap: 4rem;
+    font-family: 'Play', sans-serif;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+  }
+
+  /*---------------------------------------------------*/
+
+  .capa{
+    height: 100vh;
+    background: url(imagens/casa-41.png)no-repeat;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    width: 99vw;
+    justify-content: center;
+  }
+
+  .containerCapa{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .tituloCapa{
+    font-size: xxx-large;
+    font-family: prata;
+  }
+
+  .tituloCapa::before::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #030303;
+  }
+
+
+
+  .btnCapa{
+    padding: 1rem 5rem;
+    background: #082032;
+    border: antiquewhite;
+    border-radius: 1rem;
+  }
+
+  .btnCapa a{
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+  }
+/*------------------------------------------------------------------*/
+.Sala{
+  height: 109vh;
+}
+
+#Sala{
+  transition: 1s;
+}
+
+.tituloSala{
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  font-size: xxx-large;
+  letter-spacing: 10px;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+}
+
+.tituloSala::before{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  top: 2rem;
+  left: 11rem;
+}
+
+.tituloSala::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  left: 56rem;
+  bottom: 30px;
+}
+
+
+.containerSala{
+  height: 91vh;
+  width: 99vw;
+  display: flex;
+  align-items: end;
+}
+
+.caixaSala{
+  display: flex;
+  height: 77vh;
+  width: 99vw;
+  background: black;
+  align-items: end;
+}
+
+.conteudoSala{
+
+}
+
+.logoSala{
+  height: 27vh;
+}
+
+.logoSala img{
+    height: 27vh;
+    width: 46vw;
+}
+
+.infoSala{
+  background: white;
+  height: 50vh;
+  width: 46vw;
+  z-index: 1;
+  align-self: end;
+  padding: 1rem 2rem;
+}
+
+.infoSala ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+.btnSala{
+  position: relative;
+  top: 3rem;
+  left: 13rem;
+  padding: 1rem 4rem;
+  border-radius: 1em;
+  border: aliceblue;
+  background: #082032;
+  color: aliceblue;
+
+}
+
+.containerSliderSala {
+  display: flex;
+  width: 53vw;
+  min-height: 77vh;
+  align-items: center;
+}
+
+.sliderSala {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 53vw;
+  object-fit: cover;
+  height: 77vh;
+}
+
+.on {
+  opacity: 1;
+}
+
+.btnImgSala{
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  width: 54vw;
+}
+
+#prevButtonSala, #nextButtonSala {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: monospace;
+    color: aliceblue;
+    font-size: xxx-large;
+}
+
+/*----------------------------------------------------------*/
+
+.Cozinha{
+  height: 111vh
+}
+
+.tituloCozinha{
+  text-align: center;
+  position: relative;
+  top: 4rem;
+  font-size: xxx-large;
+  letter-spacing: 10px;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+}
+
+.tituloCozinha::before{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  top: 2rem;
+  left: 17rem;
+}
+
+.tituloCozinha::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  left: 50rem;
+  bottom: 30px;
+}
+
+
+.containerCozinha{
+  display: flex;
+  height: 100vh;
+  width: 99vw;
+  align-items: end;
+}
+
+.caixaCozinha{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 77vh;
+  width: 99vw;
+  background: black;
+  align-items: flex-end;
+
+}
+
+.logoCozinha{
+  height: 27vh;
+}
+
+.logoCozinha img{
+  height: 27vh;
+  width: 48vw;
+}
+
+.infoCozinha{
+  height: 50vh;
+  background: rgb(255, 255, 255);
+  width: 48vw;
+  z-index: 1;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoCozinha ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+.infoCozinha li{
+
+}
+
+.btnCozinha{
+  padding: 1rem 4rem;
+  border-radius: 1em;
+  border: aliceblue;
+  background: #082032;
+  color: aliceblue;
+
+}
+
+.imgCozinha{
+  width: 53vw;
+  height: 70vh;
+}
+
+.containerSliderCozinha {
+  display: flex;
+  width: 51vw;
+  min-height: 77vh;
+  align-items: end;
+}
+
+.containerImagesCozinha {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 51vw;
+}
+
+.sliderCozinha {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 51vw;
+  height: 77vh;
+}
+
+.on {
+  opacity: 1;
+}
+
+.btnImgCozinha{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 51vw;
+    align-self: center;
+}
+
+#prevButtonCozinha, #nextButtonCozinha {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: monospace;
+    color: aliceblue;
+    font-size: xxx-large;
+}
+/*------------------------------------------------------------------*/
+
+
+.Quartos{
+  height: 107vh;
+}
+
+.tituloQuartos{
+  text-align: center;
+  position: relative;
+  top: 3.5rem;
+  font-size: xxx-large;
+  letter-spacing: 10px;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+}
+
+.tituloQuartos::before{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  top: 2rem;
+  left: 17rem;
+}
+
+.tituloQuartos::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  left: 50rem;
+  bottom: 30px;
+}
+
+
+.containerQuartos{
+  height: 96vh;
+  width: 99vw;
+  display: flex;
+  align-items: end;
+}
+
+.caixaQuartos{
+  display: flex;
+  height: 77vh;
+  width: 99vw;
+  background: black;
+  align-items: center;
+}
+
+.logoQuartos{
+  height: 27vh;
+}
+
+.logoQuartos img{
+  height: 27vh;
+  width: 45vw;
+}
+
+.infoQuartos{
+  background: white;
+  height: 50vh;
+  width: 45vw;
+  z-index: 1;
+  align-self: end;
+  padding: 1rem 2rem;
+}
+
+.infoQuartos ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+.btnQuartos{
+  position: relative;
+  top: 3rem;
+  left: 13rem;
+  padding: 1rem 4rem;
+  border-radius: 1em;
+  border: aliceblue;
+  background: #082032;
+color: aliceblue;
+
+}
+
+.containerSliderQuarto {
+  display: flex;
+  width: 54vw;
+  min-height: 77vh;
+  align-items: end;
+}
+
+.containerImagesQuarto{
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 54vw;
+}
+
+.sliderQuarto {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 54vw;
+  height: 77vh;
+}
+
+.btnImgQuarto{
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  align-self: center;
+  width: 54vw;
+
+}
+
+#prevButtonQuarto, #nextButtonQuarto {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: monospace;
+    color: aliceblue;
+    font-size: xxx-large;
+}
+/*--------------------------------------------------------*/
+
+.Varanda{
+  height: 111vh
+}
+
+.tituloVaranda{
+ text-align: center;
+  position: relative;
+  top: 4rem;
+  font-size: xxx-large;
+  letter-spacing: 10px;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+}
+
+.tituloVaranda::before{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  top: 2rem;
+  left: 17rem;
+}
+
+.tituloVaranda::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20%;
+  background-color: #030303;
+  position: relative;
+  left: 50rem;
+  bottom: 30px;
+}
+
+.containerVaranda{
+  display: flex;
+  height: 100vh;
+  width: 99vw;
+  align-items: end;
+}
+
+.caixaVaranda{
+  display: flex;
+  height: 77vh;
+  width: 99vw;
+  flex-direction: row-reverse;
+  background: black;
+  align-items: flex-end;
+
+}
+
+.logoVaranda{
+  height: 27vh;
+}
+
+.logoVaranda img{
+  height: 27vh;
+  width: 48vw;
+}
+
+.infoVaranda{
+  height: 50vh;
+  background: rgb(255, 255, 255);
+  width: 48vw;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoVaranda ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+.infoVaranda li{
+
+}
+
+.btnVaranda{
+  padding: 1rem 4rem;
+  border-radius: 1em;
+  border: aliceblue;
+  background: #082032;
+  color: aliceblue;
+
+}
+
+.containerSliderVaranda {
+  display: flex;
+  width: 51vw;
+  min-height: 70vh;
+  align-items: end;
+}
+
+.containerImagesVaranda {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 51vw;
+}
+
+.sliderVaranda {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 51vw;
+  height: 77vh;
+}
+
+.on {
+  opacity: 1;
+}
+
+.btnImgVaranda{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 51vw;
+}
+
+#prevButtonVaranda, #nextButtonVaranda {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: monospace;
+  color: aliceblue;
+  font-size: xxx-large;
+}
+
+/*--------------------------------------------------*/
+.Quintal{
+  height: 100vh;
+}
+
+.tituloQuintal{
+  text-align: center;
+  position: relative;
+  top: 3.5rem;
+  font-size: xxx-large;
+  letter-spacing: 10px;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+}
+
+.tituloQuintal::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 20%;
+    background-color: #030303;
+    position: relative;
+    top: 2rem;
+    left: 17rem;
+  }
+
+  .tituloQuintal::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 20%;
+    background-color: #030303;
+    position: relative;
+    left: 50rem;
+    bottom: 30px;
+  }
+
+
+.containerQuintal{
+  height: 96vh;
+  width: 99vw;
+  display: flex;
+  align-items: end;
+}
+
+.caixaQuintal{
+  display: flex;
+  height: 77vh;
+  width: 99vw;
+  background: black;
+  align-items: end;
+}
+
+.logoQuintal{
+  height: 27vh;
+}
+
+.logoQuintal img{
+  height: 27vh;
+  width: 46vw;
+}
+
+.infoQuintal{
+  background: white;
+  height: 50vh;
+  width: 46vw;
+  z-index: 1;
+  align-self: end;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoQuintal ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Prociono', serif;
+}
+
+.btnQuintal{
+  padding: 1rem 4rem;
+  border-radius: 1em;
+  border: aliceblue;
+  background: #082032;
+  color: aliceblue;
+}
+
+.containerSliderQuintal {
+  display: flex;
+  width: 53vw;
+  min-height: 70vh;
+  align-items: end;
+ 
+}
+
+.containerImagesQuintal{
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 53vw;
+}
+
+.sliderQuintal {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 53vw;
+  height: 77vh;
+}
+
+.btnImgQuintal{
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  align-self: center;
+  width: 54vw;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prevButtonQuintal, #nextButtonQuintal {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-family: monospace;
+  color: aliceblue;
+  font-size: xxx-large;
+}
