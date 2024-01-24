@@ -1,3 +1,9 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&family=Prociono&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -23,6 +29,10 @@
 
   .logo{
     color: aliceblue;
+    font-family: 'Prata', serif;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 29px;
   }
 
   .navegacao{
@@ -39,16 +49,12 @@
     justify-content: space-evenly;
     position: relative;
     right: 11%;
+    font-family: 'Play', sans-serif;
   }
 
   .listaMenu a{
     text-decoration: none;
     color: aliceblue;
-  }
-
-
-  .capa{
- 
   }
 
   .textos{
@@ -61,23 +67,49 @@
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+    position: relative;
+    left: 1rem;
   }
 
   .tituloPrincipal{
     font-size: xxx-large;
     line-height: 85%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+  }
+
+  .degradeCapa{
+    height: 4px;
+    width: 34vw;
+    position: relative;
+    left: 2%;
+    background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
   }
 
   .subtitulo{
-
+    font-family: 'Prociono', serif;
+    font-size: 14px;
   }
 
-  .btnCapa{
-
+  .fundo button{
+    padding: 20px;
+    border: aliceblue;
+    box-shadow: 0px 4px 4px 0px #082032;
+    border-radius: 7px;
+    background: white;
+    align-self: center;
   }
+
+.botao{
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  font-size: larger;
+  font-family: 'Play', sans-serif;
+}
 
   .slider{
-    width: 55vw;
+    width: 61vw;
     max-width: 100vw;
     height: 590px;
     position: relative;
@@ -91,9 +123,9 @@
   position: absolute;
 }
 .slider .list img{
-  width: 60vw;
+  width: 61vw;
   max-width: 100vw;
-  height: 112%;
+  height: 100%;
   object-fit: cover;
 }
 .slider .buttons{
@@ -142,6 +174,8 @@
   display: none;
 }
 
+/*-------------------------------------------------*/
+
 .biografia{
   height: 100vh;
   display: flex;
@@ -152,22 +186,33 @@
 
 .conteudoBio{
   width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.tituloSecao{
+.degradeBio{
+  background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
+  height: 1vh;
+  width: 10vw;
+}
 
+.tituloBio{
+  font-family: 'Prata', serif;
+  font-size: xx-large;
+  font-weight: 200;
 }
 
 .paragrafo{
-
-}
-
-.imgBio{
-  
+  font-family: 'Prociono', serif;
 }
 
 .imgBio img{
-  height: 60vh
+  height: 60vh;
+  position: relative;
+  left: 3.9rem;
+  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px 0px 0px 0px;
 }
 /*-------------------------------------------------------------------------*/
 .imoveis{
@@ -180,6 +225,9 @@
 .tituloImoveis{
   text-align: center;
   margin: 2%;
+  color: aliceblue;
+  font-family: 'Prata', serif;
+  font-weight: 100;
 }
 
 .gridContainer{
@@ -191,9 +239,24 @@
 
 .card{
   height: 48vh;
-  border: 1px solid;
   border-radius: 15px;
   background-color: aliceblue;
+}
+
+.comondos{
+  display: flex;
+  justify-content: space-around;
+  height: 9vh;
+  align-items: center;
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+.comondos p {
+  position: relative;
+  right: 1rem;
+  font-family: monospace;
+  font-size: smaller;
 }
 
 .card img{
@@ -203,7 +266,7 @@
 }
 
 .text{
-
+  font-family: math;
 }
 
 /*------------------------------------------------------------*/
@@ -213,37 +276,120 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 
 .conteudoServicos{
   width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .tituloServiços{
+  font-family: 'Prata', serif; 
+  font-weight: 100;
+}
+.degradeServiços{
+  background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
+  height: 1vh;
+  width: 10vw;
+  position: absolute;
+  top: 9rem;
 
 }
-
+.conteudoServicos p{
+  font-family: 'Prociono', serif;
+}
+ 
 .containerCards{
-
+  height: 100vh;
+  width: 58vw;
+  background: url(https://g.foolcdn.com/editorial/images/649376/steelhighrise.jpg)no-repeat;
+  background-size: cover;
 }
 
 .row{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 13px;
+  position: absolute;
+  left: 48rem;
+  top: 10rem;
 }
 
 .cards{
   border: 1px solid;
-  height: 20vh;
+  height: 30vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding: 1rem;
+  background-color: aliceblue;
+  border: aliceblue;
+  border-radius: 10px;
 }
 
-.cards h3 button{
-
+.cards h3{
+  font-family: 'Prociono', serif;
+  font-weight: 100;
 }
+
+.cards button{
+  padding: 1rem;
+  background: #082032;
+  border: #082032;
+  border-radius: 6px;
+  color: aliceblue;
+}
+
+/*---------------------------------------------------*/
+
+.rodaPe{
+  height: 40vh;
+  background: #091E3A;
+}
+
+.containerFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.rodaPe h3{
+  letter-spacing: 6.4px;
+  font-size: xx-large;
+  font-family: 'Prata', serif;
+  font-weight: 100;
+}
+
+.degrade{
+  height: 7px;
+  width: 40vw;
+  background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
+}
+
+.caixaTexto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Endereços{
+  position: relative;
+  top: 1rem;
+}
+
+.Endereços p {
+  line-height: 4.7rem;
+  font-family: math;
+}
+
+.Copyright{
+color: aliceblue;
+}
+
