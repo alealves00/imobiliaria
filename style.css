@@ -1,395 +1,250 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&family=Prociono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&family=Prociono&display=swap');
+body{
+  overflow-x: hidden;
+}
+/*                          nav                         */
+.custom-bg {
+    background-color: #082032;
+}
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-  } 
-
-:root{ 
-    --color1:  #f0f8ff;
-    --color2:  #fff;
-    --color3:  #8f9491;
-    --color4:  #082032;
-    --color5:  #000;
-  }
-
-  body{
-    background-color: aliceblue;
-  }
-
-  .cabecalho{
-    height: 14vh;
-    background: #082032;
-  }
-
-  .logo{
-    color: aliceblue;
-    font-family: 'Prata', serif;
-    font-size: xx-large;
-    text-align: center;
-    line-height: 29px;
-  }
-
-  .navegacao{
-    display: flex;
-    height: 14vh;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .listaMenu{
-    display: flex;
-    list-style: none;
-    width: 64.3vw;
-    justify-content: space-evenly;
-    position: relative;
-    right: 11%;
-    font-family: 'Play', sans-serif;
-  }
-
-  .listaMenu a{
-    text-decoration: none;
-    color: aliceblue;
-  }
-
-  .textos{
-    display: flex;
-    align-items: center;
-  }
-
-  .fundo{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1rem;
-    position: relative;
-    left: 1rem;
-  }
-
-  .tituloPrincipal{
-    font-size: xxx-large;
-    line-height: 85%;
-    font-family: 'Playfair Display', serif;
-    font-weight: 100;
-  }
-
-  .degradeCapa{
-    height: 4px;
-    width: 34vw;
-    position: relative;
-    left: 2%;
-    background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
-  }
-
-  .subtitulo{
-    font-family: 'Prociono', serif;
-    font-size: 14px;
-  }
-
-  .fundo button{
-    padding: 20px;
-    border: aliceblue;
-    box-shadow: 0px 4px 4px 0px #082032;
-    border-radius: 7px;
-    background: white;
-    align-self: center;
-  }
-
-.botao{
-  text-decoration: none;
-  color: black;
-  font-weight: 900;
-  font-size: larger;
+/*                          main                        */ 
+.w-100 {
+  height: 100vh;
+}
+.carousel-caption h5{
+  font-family: 'Playfair Display', serif;
+}
+.carousel-caption p{
+  font-family: 'Prociono', serif;
+}
+.carousel-caption p a {
   font-family: 'Play', sans-serif;
 }
-
-  .slider{
-    width: 61vw;
-    max-width: 100vw;
-    height: 590px;
-    position: relative;
+/*                          descrição                       */ 
+.caixaBio{
+  display: flex;
+}
+.about-text{
+  display: flex!important;
+  align-items: center;
+  flex-direction: column;
+}
+/*                         casas                             */
+  .comodos{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card-body{
+    text-align: center;
+    align-self: center;
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-body p{
+    text-align: start;
+  }
+  .inner{
     overflow: hidden;
-}
-.slider .list{
-  width: max-content;
-  height: 100%;
-  display: flex;
-  transition: 1s;
-  position: absolute;
-}
-.slider .list img{
-  width: 61vw;
-  max-width: 100vw;
-  height: 100%;
-  object-fit: cover;
-}
-.slider .buttons{
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-.slider .buttons button{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff5;
-  color: #fff;
-  border: none;
-  font-family: monospace;
-  font-weight: bold;
-}
-.slider .dots{
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-.slider .dots li{
-  list-style: none;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  margin: 10px;
-  border-radius: 20px;
-  transition: 0.5s;
-}
-.slider .dots li.active{
-  width: 30px;
-}
+  }
+  .inner img{
+    transition: all 1.5s ease;
+  }
+  .inner:hover img{
+    transform: scale(1.5);
+  }
+  /*                          serviços                             */
+  .filho{
+    height: 260px!important;
+    }
+  .containerServiços{
+    background: url(https://g.foolcdn.com/editorial/images/649376/steelhighrise.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  /*                                     footer                    */
+  footer{
+    height: 35vh;
+  }
+  
+  .main-title{
+    margin-bottom: 3rem;
+  }
+  
+  .Caixa{
+    height: 35vh;
+    align-content: center;
+    align-items: center;
+  }
+  
 
-.buttons, .dots{
-  display: none;
+@media (max-width: 575.98px) {
+  .cardCasa{
+justify-content:center;
 }
-
-/*-------------------------------------------------*/
-
-.biografia{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 26%;
+.colCasas{
+  width: 100%!important;
+  text-align: -webkit-center;
 }
-
-.conteudoBio{
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.cardServiços{
+  margin: 1rem!important;
 }
-
-.degradeBio{
-  background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
-  height: 1vh;
-  width: 10vw;
-}
-
-.tituloBio{
-  font-family: 'Prata', serif;
-  font-size: xx-large;
-  font-weight: 200;
-}
-
-.paragrafo{
-  font-family: 'Prociono', serif;
-}
-
-.imgBio img{
-  height: 60vh;
-  position: relative;
-  left: 3.9rem;
-  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 40px 0px 0px 0px;
-}
-/*-------------------------------------------------------------------------*/
-.imoveis{
-  height: 115vh;
-  background-color: #082032;
-  display: flex;
-  flex-direction: column;
-}
-
-.tituloImoveis{
-  text-align: center;
-  margin: 2%;
-  color: aliceblue;
-  font-family: 'Prata', serif;
-  font-weight: 100;
-}
-
-.gridContainer{
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .card{
-  height: 48vh;
-  border-radius: 15px;
-  background-color: aliceblue;
+  width: 65%!important;
+}
+.filho{
+  width: 65%!important;
+}
+.main-title{
+  margin-bottom: 1rem!important;
+}
+.carousel-caption p{
+    display: none;
+}
 }
 
-.comondos{
-  display: flex;
-  justify-content: space-around;
-  height: 9vh;
-  align-items: center;
-  font-family: cursive;
-  font-size: xx-large;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-item img {
+    height: 40vh;
+    object-fit: cover;
+ }
+ .carousel-control-prev, .carousel-control-next{
+   height: 40vh;
+ }
+  .cardCasa{
+    justify-content:center;
 }
-
-.comondos p {
-  position: relative;
-  right: 1rem;
-  font-family: monospace;
-  font-size: smaller;
+.colCasas{
+  width: 45%!important;
 }
-
-.card img{
-  height: 29vh;
-  width: 24vw;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.text{
-  font-family: math;
-}
-
-/*------------------------------------------------------------*/
-
-.serviços{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-}
-
-.conteudoServicos{
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-}
-
-.tituloServiços{
-  font-family: 'Prata', serif; 
-  font-weight: 100;
-}
-.degradeServiços{
-  background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
-  height: 1vh;
-  width: 10vw;
-  position: absolute;
-  top: 9rem;
-
-}
-.conteudoServicos p{
-  font-family: 'Prociono', serif;
-}
- 
-.containerCards{
-  height: 100vh;
-  width: 58vw;
-  background: url(https://g.foolcdn.com/editorial/images/649376/steelhighrise.jpg)no-repeat;
-  background-size: cover;
-}
-
-.row{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 13px;
-  position: absolute;
-  left: 48rem;
-  top: 10rem;
-}
-
-.cards{
-  border: 1px solid;
-  height: 30vh;
+.card{
+  width: 100%!important;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+}
+.filho{
+  width: 50%!important;
+  text-align: center;
+}
+.containerServiços{
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 1rem;
-  background-color: aliceblue;
-  border: aliceblue;
-  border-radius: 10px;
+}
+.cardServiços{
+  justify-content: center;
+  margin: 1rem!important;
+}
+.main-title{
+  margin: auto;margin-bottom: 1rem!important;
+}
 }
 
-.cards h3{
-  font-family: 'Prociono', serif;
-  font-weight: 100;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cardCasa{
+    justify-content:center;
+    gap: 2rem;
+}
+.colCasas{
+  width: 28%!important;
+}
+.card{
+  width: 114%!important;
+}
+.filho{
+  width: 100%!important;
+}
+  .containerServiços{
+    width: 100%!important;
+    align-items: center;
+    justify-content: center;
+}
+  .conteudo{
+  width: 85%!important;
+  }
+.cardServiços{
+  width: 78%;
+  justify-content: center;
+  margin: 1rem!important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .img-fluid{
+
+  }
+  .carousel-item img{
+
+  }
+  .cardCasa{
+    justify-content:center;
+    gap: 2rem;
+  }
+  .colCasas{
+    
+  }
+  .card{
+  
+  }
+  .filho{
+    
+  }
+  .containerServiços{
+    width: 100%!important;
+    align-items: center;
+    justify-content: center;
+}
+  .conteudo{
+    width: 75%!important;
+  }
+  .pai{
+    justify-content: space-around!important;
+  }
+.cardServiços{
+justify-content:center;
+width: 60%;
+margin: 1rem!important;
+}
 }
 
-.cards button{
-  padding: 1rem;
-  background: #082032;
-  border: #082032;
-  border-radius: 6px;
-  color: aliceblue;
-}
-
-/*---------------------------------------------------*/
-
-.rodaPe{
-  height: 40vh;
-  background: #091E3A;
-}
-
-.containerFooter{
-  display: flex;
+@media (min-width: 1200px) {
+  .img-fluid{
+    
+  }
+  .carousel-item img{
+  height: 100vh;
+  object-fit: cover;
+  }
+  .cardCasa{
+    justify-content:center;
+  }
+  .colCasas{
+    width: 23%!important;
+  }
+  .card{
+    width: 102%!important;
+  }
+  .filho{
+    width: 102%!important;
+  }
+  .cardServiços{
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    height: 100%;
+    margin: 1rem!important;
+  }
+.containerServiços{
+  width: 52%!important;
   align-items: center;
-  justify-content: space-around;
-  color: aliceblue;
+  justify-content: center;
 }
-
-.rodaPe h3{
-  letter-spacing: 6.4px;
-  font-size: xx-large;
-  font-family: 'Prata', serif;
-  font-weight: 100;
+  .conteudo{
+    width: 46%!important;
+  }
+  .pai{
+    
+  }
 }
-
-.degrade{
-  height: 7px;
-  width: 40vw;
-  background: linear-gradient(90deg, #091E3A 0%, #2F80ED 50%, #2D9EE0 100%);
-}
-
-.caixaTexto{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.Endereços{
-  position: relative;
-  top: 1rem;
-}
-
-.Endereços p {
-  line-height: 4.7rem;
-  font-family: math;
-}
-
-.Copyright{
-color: aliceblue;
-}
-

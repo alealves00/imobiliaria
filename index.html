@@ -1,264 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="navegacao">
-            <div class="logo">
-                Alex <br> Imobiliaria
-            </div>
-            <ul class="listaMenu">
-                <li><a href="">Descrição</a></li>
-                <li><a href="#projetos">Imoveis</a></li>
-                <li><a href="#serviços">Serviços</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="capa">
-        <div class="textos">
-            <div class="fundo">
-                <h2 class="tituloPrincipal">Sua casa dos <br> sonhos esta ao <span class="linha"> alcance</span></h2>
-                <div class="degradeCapa"></div>
-                <p class="subtitulo">Bem-vindo à Sua Nova História: Descubra Imóveis que Moldam o Futuro de Vidas e Famílias.</p>
-                <button><a class="botao" href="#projetos">Explore Nossas Propriedades</a></button>
-            </div>
-            <div class="slider">
-                <div class="list">
-            <div class="item">
-           <img class="item" src="imagens/capa1.jpg" alt="#">
-        </div>
-           <div class="item">
-            <img src="imagens/capa2.webp" alt="">
-        </div>
-        <div class="item">
-            <img src="imagens/capa3.jpeg" alt="">
-        </div>
-        </div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand" style="font-family: 'Prata', serif;;" href="#">Leal Lima</a>
+      <button
+        class="navbar-toggler shadow-none border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2" style="font-family:'Play', sans-serif; ;">
+            <a class="nav-link text-white" href="#">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Propriedades Disponiveis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">serviços</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
+  </nav>
+<main>
+  <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+    <div class="carousel-indicators">
+      <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
     </div>
-    <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img alt="..." class="d-block w-100 img-fluid" src="http://files.123inventatuweb.com/acens110017/image/maxresdefault.jpg">
+        <div class="carousel-caption">
+          <h5>Encontre a Casa Perfeita: Seu Espaço, Sua História.</h5>
+          <p>Com Mais de 15 anos de Experiência, Nossa Imobiliária é sua Parceira Confiável na Jornada para Encontrar o Lar dos Seus Sonhos.</p>
+          <p><a class="btn btn-warning mt-3" href="#">saiba mais</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img alt="..." class="d-block w-100 img-fluid" src="https://i.pinimg.com/originals/1a/f3/54/1af3543d4ccd7d9f074386a6c0f409d7.jpg">
+        <div class="carousel-caption">
+          <h5>Explore Nossas Propriedades Exclusivas e Faça Seu Sonho Se Tornar Realidade.</h5>
+          <p>Com Mais de 15 anos de Experiência, Nossa Imobiliária é sua Parceira Confiável na Jornada para Encontrar o Lar dos Seus Sonhos.</p>
+          <p><a class="btn btn-warning mt-3" href="#">saiba mais</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img alt="..." class="d-block w-100 img-fluid" src="https://en.idei.club/uploads/posts/2023-03/1679342898_en-idei-club-p-luxury-beach-house-dizain-krasivo-45.jpg">
+        <div class="carousel-caption">
+          <h5>Encontre Sua Felicidade em Uma Casa Que Reflete Seu Estilo de Vida.</h5>
+          <p>Com Mais de 15 anos de Experiência, Nossa Imobiliária é sua Parceira Confiável na Jornada para Encontrar o Lar dos Seus Sonhos.</p>
+          <p><a class="btn btn-warning mt-3" href="#">saiba mais</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
 </div>
 </main>
-    <section class="biografia">
-        <div class="conteudoBio">
-          <div class="degradeBio"></div>
-            <h2 class="tituloBio">Seu Futuro Começa Aqui: Conheça Alex Corretor!</h2>
-            <p class="paragrafo">Conheça Alex Alves , seu guia confiável no universo imobiliário, dedicado a transformar sonhos em realidade. Com uma visão apurada do mercado e um compromisso inabalável com a excelência, Alex vai além das expectativas para oferecer uma experiência imobiliária excepcional. Sua abordagem personalizada e paixão pelo setor garantem não apenas transações suaves, mas também relacionamentos duradouros. Seja você um comprador entusiasmado, um investidor estratégico ou alguém em busca do lar perfeito, Alex é o parceiro que transforma cada passo em direção à propriedade dos seus sonhos em uma jornada emocionante e satisfatória.</p>
-        </div>
-        <!-- Algo da sua escolha -->
-        <div class="imgBio">
-    <img src="https://modof.club/uploads/posts/2023-01/1675091941_modof-club-p-parnei-v-delovom-stile-15.jpg" alt="">
-        </div>
-    </section>
-    
-    <section id="projetos" class="imoveis">
-        <h2 class="tituloImoveis">Seu Novo Lar Espera por Você: Conheça Nossas Casas Incríveis à Venda!</h2>
-        <div class="galeria">
-          <div class="gridContainer">
-            <div class="card">
-             <a href="casa1/casa1.html"> <img src="imagens/casa8.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-              <div class="text">
-                <p>Cidade: João Pessoa</p>
-                <p>Bairro: Geisel</p>
-                <p>Rua: Adalgiza Carneiro Cavacante</p>
-              </div>
-              <div class="comondos">
-                <i class="fi fi-tr-bed-empty"></i>
-                <p>3</p>
-                <i class="fi fi-tr-shower"></i>
-                <p>2</p>
-                <i class="fi fi-ts-garage-car"></i>
-                <p>2</p>
-              </div>
-            </div>
-            <div class="card">
-             <a href="casa1/casa1.html"><img src="imagens/casa4.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-              <div class="text">
-                <p>Cidade: João Pessoa</p>
-                <p>Bairro: Geisel</p>
-                <p>Rua: Adalgiza Carneiro Cavacante</p>
-              </div>
-              <div class="comondos">
-                <i class="fi fi-tr-bed-empty"></i>
-                <p>3</p>
-                <i class="fi fi-tr-shower"></i>
-                <p>2</p>  
-                <i class="fi fi-ts-garage-car"></i>
-                <p>2</p>
-              </div>
-            </div>
-            <div class="card">
-              <a href="casa1/casa1.html"><img src="imagens/casa5.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-              <div class="text">
-                <p>Cidade: João Pessoa</p>
-                <p>Bairro: Geisel</p>
-                <p>Rua: Adalgiza Carneiro Cavacante</p>
-              </div>
-              <div class="comondos">
-                <i class="fi fi-tr-bed-empty"></i>
-                <p>3</p>
-                <i class="fi fi-tr-shower"></i>
-                <p>2</p>  
-                <i class="fi fi-ts-garage-car"></i>
-                <p>2</p>
-              </div>
-            </div>
-            <div class="card">
-              <a href="casa1/casa1.html"><img src="imagens/casa6.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-              <div class="text">
-                <p>Cidade: João Pessoa</p>
-                <p>Bairro: Geisel</p>
-                <p>Rua: Adalgiza Carneiro Cavacante</p>
-              </div>
-              <div class="comondos">
-                <i class="fi fi-tr-bed-empty"></i>
-                <p>3</p>
-                <i class="fi fi-tr-shower"></i>
-                <p>2</p>  
-                <i class="fi fi-ts-garage-car"></i>
-                <p>2</p>
-              </div>
-            </div>
-            <div class="card">
-              <a href="casa1/casa1.html"><img src="imagens/casa7.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-              <div class="text">
-                <p>Cidade: João Pessoa</p>
-                <p>Bairro: Geisel</p>
-                <p>Rua: Adalgiza Carneiro Cavacante</p>
-              </div>
-              <div class="comondos">
-                <i class="fi fi-tr-bed-empty"></i>
-                <p>3</p>
-                <i class="fi fi-tr-shower"></i>
-                <p>2</p>  
-                <i class="fi fi-ts-garage-car"></i>
-                <p>2</p>
-              </div>
-            </div>
-            <div class="card">
-              <a href="casa1/casa1.html"><img src="https://i.pinimg.com/originals/06/8f/5b/068f5b4740c87c6c1e5f87763dea7ac2.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-              <div class="text">
-                <p>Cidade: João Pessoa</p>
-                <p>Bairro: Geisel</p>
-                <p>Rua: Adalgiza Carneiro Cavacante</p>
-              </div>
-              <div class="comondos">
-                <i class="fi fi-tr-bed-empty"></i>
-                <p>3</p>
-                
-                <i class="fi fi-tr-shower"></i>
-                <p>2</p>
-                  
-                <i class="fi fi-ts-garage-car"></i>
-                <p>2</p>
-                
-              </div>
-            </div>
-            <div class="card">
-                <a href="casa1/casa1.html"><img src="http://files.123inventatuweb.com/acens110017/image/maxresdefault.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-                <div class="text">
-                  <p>Cidade: João Pessoa</p>
-                  <p>Bairro: Geisel</p>
-                  <p>Rua: Adalgiza Carneiro Cavacante</p>
-                </div>
-                <div class="comondos">
-                  <i class="fi fi-tr-bed-empty"></i>
-                  <p>3</p>
-                  <i class="fi fi-tr-shower"></i>
-                  <p>2</p>  
-                  <i class="fi fi-ts-garage-car"></i>
-                  <p>2</p>
-                </div>
-              </div>
-              <div class="card">
-                <a href="casa1/casa1.html"><img src="https://i.pinimg.com/originals/1a/f3/54/1af3543d4ccd7d9f074386a6c0f409d7.jpg" alt="Casa em João Pessoa" class="img-casa"></a>
-                <div class="text">
-                  <p>Cidade: João Pessoa</p>
-                  <p>Bairro: Geisel</p>
-                  <p>Rua: Adalgiza Carneiro Cavacante</p>
-                </div>
-                <div class="comondos">
-                  <i class="fi fi-tr-bed-empty"></i>
-                  <p>3</p>
-                  <i class="fi fi-tr-shower"></i>
-                  <p>2</p>  
-                  <i class="fi fi-ts-garage-car"></i>
-                  <p>2</p>
-                </div>
-              </div>
+  <section class="about section-padding" id="about">
+    <div class="container mt-5">
+      <div class="row caixaBio">
+        <div class="col-lg-8 col-md-12 col-12 order-lg-1 order-1 ps-lg-5 d-flex align-items-center">
+          <div class="about-text">
+            <h2 style=" font-family: 'Prata', serif;">Oferecemos os melhores
+              serviços de qualidade de todos os tempos<br>
+            </h2>
+            <p style="font-family: 'Prociono', serif;">
+              Realize o sonho da casa própria com a [Nome da Imobiliária]! Somos uma empresa renomada e experiente em João Pessoa, com mais de X anos no mercado. Oferecemos atendimento personalizado, transparência, agilidade e diversas opções de imóveis para você encontrar o seu lugar perfeito. Entre em contato e realize seu sonho!</p>
+            <a class="btn btn-warning" style="font-family: 'Play', sans-serif;" href="#">Converse conosco</a>
           </div>
         </div>
-      </section>
-      
-    
-    <section id="serviços" class="serviços">
-        <div class="conteudoServicos">
-          <div class="degradeServiços"></div>
-    <h2 class="tituloServiços">Encontre Seu Lar dos Sonhos: Descubra, Confirme, Realize!</h2>
-            <p>Preparado para transformar seu desejo de ter um lar perfeito em realidade? Nossos quatro serviços exclusivos garantem não apenas uma jornada simplificada, mas também a certeza de um investimento sólido e significativo</p>
-            <p>Não perca tempo na busca pelo seu lar dos sonhos. Clique agora para iniciar uma jornada emocionante e sem complicações. Estamos aqui para tornar seu sonho de casa própria uma realidade palpável.</p>
+        <div class="col-lg-4 col-md-12 col-12 order-lg-2 order-2">
+          <div class="about-img"><img alt="" class="img-fluid mt-3" src="https://modof.club/uploads/posts/2023-01/1675091941_modof-club-p-parnei-v-delovom-stile-15.jpg"></div>
         </div>
-    
-        <div class="containerCards">
-            <div class="row">
-              <div class="col-xs-3">
-                <div class="cards">
-                    <h3>Avaliação de Imóveis</h3>
-                    <button>Clique Aqui</button>
-                </div>
-              </div>
-              <div class="col-xs-3">
-                <div class="cards">
-                    <h3>Financiamento de Imóveis </h3>
-                    <button>Clique Aqui</button>
-                </div>
-              </div>
-              <div class="col-xs-3">
-                <div class="cards">
-                    <h3>Visita a Propriedades</h3>
-                    <button>Clique Aqui</button>
-                </div>
-              </div>
-              <div class="col-xs-3">
-                <div class="cards">
-                    <h3>Gestão de Imoveis</h3>
-                    <button>Clique Aqui</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-    </section>
-    
-    <footer class="rodaPe">
-      <div class="containerFooter">
-        <div class="caixaTexto">
-    <h3 >Aqui, o seu sonho é possível.</h3>
-    <div class="degrade"></div>
+      </div>
+    </div>
+  </section>
+<!--------------------------------------------- CASAS -------------------------------------------- --> 
+<div class="cardCasa row row-cols-1 row-cols-sm-2 row-cols-lg-4 mt-5 g-4">
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://i.pinimg.com/originals/d8/e5/4c/d8e54c1635d8230d362c83da879ce43f.jpg" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+    <i class="fi fi-tr-bed-empty"></i>
+    <p>3</p>
+    <i class="fi fi-tr-shower"></i>
+    <p>2</p>  
+    <i class="fi fi-ts-garage-car"></i>
+    <p>2</p>
   </div>
-    <div class="Endereços">
-      <p>Endereço do Escritório, Cidade, Estado</p>
-      <p>Email: exemplo@email.com</p>
-      <p>Telefone: (123) 456-7890</p>
+  <a href="casa1/casa1.html" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://assets.newatlas.com/dims4/default/9000b1a/2147483647/strip/true/crop/699x466+0+103/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Ftonys-farm.jpg" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+  <i class="fi fi-tr-bed-empty"></i>
+  <p>3</p>
+  <i class="fi fi-tr-shower"></i>
+  <p>2</p>  
+  <i class="fi fi-ts-garage-car"></i>
+  <p>2</p>
+</div>
+  <a href="#" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+      <img src="https://images.adsttc.com/media/images/5d13/93e3/284d/d1e4/6800/0025/large_jpg/hse-vanono-hero-sunday-edit.jpg?1561564117" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Casa no Altiplano</h5>
+        <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+        <div class="comodos">
+          <i class="fi fi-tr-bed-empty"></i>
+          <p>3</p>
+          <i class="fi fi-tr-shower"></i>
+          <p>2</p>  
+          <i class="fi fi-ts-garage-car"></i>
+          <p>2</p>
+        </div>
+        <a href="#" class="btn btn-primary">Veja Aqui</a>
+      </div>
     </div>
   </div>
-    <div class="Copyright">© Copyright 2023. All Rights Reserved
-    </div> 
-    </footer>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://www.gratistodo.com/wp-content/uploads/2017/02/fachadas-de-casas-modernas-16.jpg" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+    <i class="fi fi-tr-bed-empty"></i>
+    <p>3</p>
+    <i class="fi fi-tr-shower"></i>
+    <p>2</p>  
+    <i class="fi fi-ts-garage-car"></i>
+    <p>2</p>
+  </div>
+  <a href="#" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://i.pinimg.com/originals/d7/f8/a5/d7f8a581ddaa892631a248b9859cadae.jpg" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+    <i class="fi fi-tr-bed-empty"></i>
+    <p>3</p>
+    <i class="fi fi-tr-shower"></i>
+    <p>2</p>  
+    <i class="fi fi-ts-garage-car"></i>
+    <p>2</p>
+  </div>
+  <a href="#" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://myfancyhouse.com/wp-content/uploads/2014/10/Spectacular-House-I-In-Munich-Germany-1.jpg" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+    <i class="fi fi-tr-bed-empty"></i>
+    <p>3</p>
+    <i class="fi fi-tr-shower"></i>
+    <p>2</p>  
+    <i class="fi fi-ts-garage-car"></i>
+    <p>2</p>
+  </div>
+  <a href="#" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://avatars.mds.yandex.net/i?id=86c2b824a3a358ed45b979c08faa982f0b876936-6945470-images-thumbs&n=13" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+    <i class="fi fi-tr-bed-empty"></i>
+    <p>3</p>
+    <i class="fi fi-tr-shower"></i>
+    <p>2</p>  
+    <i class="fi fi-ts-garage-car"></i>
+    <p>2</p>
+  </div>
+  <a href="#" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+  <div class="col colCasas">
+    <div class="card">
+      <div class="inner">
+<img src="https://i.pinimg.com/originals/b3/f6/1c/b3f61c6c26d9e2081893c30ee6766d4e.jpg" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Casa no Altiplano</h5>
+  <p class="card-text">Cidade:Joao Pessoa <br> Bairro:Altiplano <br> valor: 100.000.00</p>
+  <div class="comodos">
+    <i class="fi fi-tr-bed-empty"></i>
+    <p>3</p>
+    <i class="fi fi-tr-shower"></i>
+    <p>2</p>  
+    <i class="fi fi-ts-garage-car"></i>
+    <p>2</p>
+  </div>
+  <a href="#" class="btn btn-primary">Veja Aqui</a>
+</div>
+</div>
+  </div>
+</div>
+<!----------------------------------------------------------------------------------------------------->
+<div class="pai row mt-5 align-items-center justify-content-center">
+  <div class="conteudo col-lg-6 col-md-11 col-11">
+    <div class="conteudoServiços ">
+      <div class="degradeServiços"></div>
+      <h2 class="tituloServiços" style="font-family: 'Playfair Display', serif;">Encontre Seu Lar dos Sonhos: Descubra, Confirme, Realize!</h2>
+      <p style="font-family: 'Prociono', serif;">Preparado para transformar seu desejo de ter um lar perfeito em realidade? Nossos quatro serviços exclusivos garantem não apenas uma jornada simplificada, mas também a certeza de um investimento sólido e significativo</p>
+      <p>Não perca tempo na busca pelo seu lar dos sonhos. Clique agora para iniciar uma jornada emocionante e sem complicações. Estamos aqui para tornar seu sonho de casa própria uma realidade palpável.</p>
+    </div>
+  </div>
+  <div class=" containerServiços col-lg-5 col-md-12 col-12 d-flex" style="text-align: -webkit-center">
+    <div class="cardServiços row row-cols-1 row-cols-md-2 g-4">
+      <div class="colCard">
+        <div class="card filho">
+          <div class="card-body">
+            <h5 class="card-title">Avaliação de Imóveis</h5>
+            <p class="card-text">oferece avaliações precisas e confiáveis, com laudos técnicos que atendem às normas da ABNT.</p>
+            <a href="#" class="btn btn-primary btnCard">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="colCard">
+        <div class="card filho">
+          <div class="card-body">
+            <h5 class="card-title">Financiamento de Imóveis</h5>
+            <p class="card-text">Você pode realizar seu sonho com condições especiais e parcelas que cabem no seu bolso.</p>
+            <a href="#" class="btn btn-primary btnCard">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="colCard">
+        <div class="card filho">
+          <div class="card-body">
+            <h5 class="card-title">Visita a Propriedades</h5>
+            <p class="card-text"> A visita à propriedade é uma etapa fundamental para garantir que você está fazendo a escolha certa.</p>
+            <a href="#" class="btn btn-primary btnCard">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="colCard">
+        <div class="card filho">
+          <div class="card-body">
+            <h5 class="card-title">Gestão de Imoveis</h5>
+            <p class="card-text">Somos uma empresa especializada em Gestão de Imóveis, oferecendo uma gama completa de serviços para que você não ter preocupações</p>
+            <a href="#" class="btn btn-primary btnCard">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background-color: #082032;">
+
+<div class="container">
+<div class="Caixa row text-white">
+<div class="col-md-12">
+<h3 class="main-title text-center">Aqui, o seu sonho é possível.</h3>
+</div>
+<div class="col-md-4 contact-box">
+<i class="fas fa-phone"></i>
+<p><span class="contact-tile">Ligue para:</span> (48) 99999-9999</p>
+</div>
+<div class="col-md-4 contact-box">
+<i class="fas fa-envelope"></i>
+<p><span class="contact-tile">Envie um e-mail:</span> contato@hdcagency.com.br</p>
+</div>
+<div class="col-md-4 contact-box">
+<p><span class="contact-tile">Venha tomar um café:</span> Rua Lorem Ipsum - 1314</p>
+<p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+</div>
+</div>
+</div>
+</footer>
+  
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

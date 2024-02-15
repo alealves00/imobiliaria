@@ -1,3 +1,13 @@
+let nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 100) {
+    nav.classList.add('bg-dark', 'shadow');
+  } else {
+    nav.classList.remove('bg-dark', 'shadow');
+  }
+});
+/*
 function createSlider(sliderClass, prevButtonId, nextButtonId) {
   const sliderElements = document.querySelectorAll(`.${sliderClass}`);
   const btnPrev = document.getElementById(prevButtonId);
@@ -28,4 +38,4 @@ createSlider('sliderSala', 'prevButtonSala', 'nextButtonSala');
 createSlider('sliderCozinha', 'prevButtonCozinha', 'nextButtonCozinha');
 createSlider('sliderQuarto', 'prevButtonQuarto', 'nextButtonQuarto');
 createSlider('sliderVaranda', 'prevButtonVaranda', 'nextButtonVaranda');
-createSlider('sliderQuintal', 'prevButtonQuintal', 'nextButtonQuintal');
+createSlider('sliderQuintal', 'prevButtonQuintal', 'nextButtonQuintal');*/

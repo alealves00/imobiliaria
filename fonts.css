@@ -1,0 +1,23 @@
+ /*                         main                     */
+ .carousel-caption h5{
+    font-family: 'Playfair Display', serif;
+  }
+  .carousel-caption p{
+    font-family: 'Prociono', serif;
+  }
+  .carousel-caption p a {
+    font-family: 'Play', sans-serif;
+  }
+
+  /*                          casas                   */ 
+  .card-title{
+    font-family: 'Prata', serif;
+  } 
+  .card-text{
+    font-family: 'Prociono', serif;
+  }
+  .card-body a{
+    font-family: 'Play', sans-serif;
+    background-color: #2b2f32;
+    border: #2b2f32;
+  }
