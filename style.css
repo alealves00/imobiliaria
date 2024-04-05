@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play&family=Playfair+Display&family=Prociono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Playfair+Display&family=Prociono&display=swap');
+
 body{
   overflow-x: hidden;
 }
@@ -33,6 +30,41 @@ body{
   align-items: center;
   flex-direction: column;
 }
+/*                         janelas flutuantes                 */ 
+body.overlay-open {
+  overflow: hidden; 
+}
+body.overlay-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+#janela {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 15px;
+  z-index: 1;
+}
+.fechar{
+  cursor: pointer;
+  display: flex;
+  width: 97%;
+  justify-content: end;
+  z-index: 2;
+}
+.imgSlider{
+border-radius: 15px 15px 0px 0px;
+}
+
 /*                         casas                             */
   .comodos{
     display: flex;
@@ -56,7 +88,7 @@ body{
     transition: all 1.5s ease;
   }
   .inner:hover img{
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   /*                          serviços                             */
   .filho{
@@ -81,8 +113,17 @@ body{
     align-content: center;
     align-items: center;
   }
-  
-
+  .indacadores{
+    bottom: 12rem!important;
+    }
+    .carousel-control-prev, .carousel-control-next{
+    height:60%;
+    }
+    .title  {
+      bottom: 14rem !important;
+      letter-spacing: 10px;
+      justify-self: center;
+    }
 @media (max-width: 575.98px) {
   .cardCasa{
 justify-content:center;
@@ -106,6 +147,24 @@ justify-content:center;
 .carousel-caption p{
     display: none;
 }
+.janelaImg img{
+  height: 45vh;
+  object-fit: cover;
+}
+.janela{
+  height: 90%;
+  width: 85%;
+}
+.indacadores{
+  bottom: 16rem!important;
+  }
+  .carousel-control-prev, .carousel-control-next{
+  height:50%;
+  }
+  .title  {
+    bottom: 14rem !important;
+    letter-spacing: 10px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -141,6 +200,24 @@ justify-content:center;
 .main-title{
   margin: auto;margin-bottom: 1rem!important;
 }
+.janelaImg img{
+  height: 60vh;
+  object-fit: cover;
+}
+.janela{
+  height: 90%;
+  width: 85%;
+}
+.indacadores{
+  bottom: 13rem!important;
+  }
+  .carousel-control-prev, .carousel-control-next{
+  height:50%;
+  }
+  .title  {
+    bottom: 14rem !important;
+    letter-spacing: 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -170,27 +247,28 @@ justify-content:center;
   justify-content: center;
   margin: 1rem!important;
 }
+.janelaImg img{
+  height: 60vh;
+  object-fit: cover;
+}
+.janela{
+  height: 95%;
+  width: 70%;
+}
+.indacadores {
+  bottom: 13rem !important;
+}
+  .carousel-control-prev, .carousel-control-next{
+  height:50%;
+  }
+
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
-  .img-fluid{
-
-  }
-  .carousel-item img{
-
-  }
   .cardCasa{
     justify-content:center;
     gap: 2rem;
   }
-  .colCasas{
-    
-  }
-  .card{
-  
-  }
-  .filho{
-    
-  }
+
   .containerServiços{
     width: 100%!important;
     align-items: center;
@@ -207,15 +285,27 @@ justify-content:center;
 width: 60%;
 margin: 1rem!important;
 }
+.janelaImg img{
+  height: 60vh;
+  object-fit: cover;
+}
+.janela{
+  height: 95%;
+  width: 60%;
+}
+  .carousel-control-prev, .carousel-control-next{
+  height:50%;
+  }
 }
 
 @media (min-width: 1200px) {
-  .img-fluid{
-    
-  }
-  .carousel-item img{
+  .capaImg img{
   height: 100vh;
   object-fit: cover;
+  }
+  .janelaImg img{
+    height: 60vh;
+    object-fit: cover;
   }
   .cardCasa{
     justify-content:center;
@@ -244,7 +334,12 @@ margin: 1rem!important;
   .conteudo{
     width: 46%!important;
   }
-  .pai{
-    
+  .janela{
+    height: 90%;
+    width: 45%;
+}
+  .carousel-control-prev, .carousel-control-next{
+  height:65%;
   }
+
 }
