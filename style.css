@@ -21,6 +21,9 @@ body{
 .carousel-caption p a {
   font-family: 'Play', sans-serif;
 }
+.carousel-control-prev, .carousel-control-next{
+  display: none!important;
+}
 /*                          descrição                       */ 
 .caixaBio{
   display: flex;
@@ -135,12 +138,10 @@ justify-content:center;
 .cardServiços{
   margin: 1rem!important;
 }
-.card{
-  width: 65%!important;
+.card, .filho{
+  width: 85%!important;
 }
-.filho{
-  width: 65%!important;
-}
+
 .main-title{
   margin-bottom: 1rem!important;
 }
@@ -159,7 +160,7 @@ justify-content:center;
   bottom: 16rem!important;
   }
   .carousel-control-prev, .carousel-control-next{
-  height:50%;
+    display: none!important;
   }
   .title  {
     bottom: 14rem !important;
@@ -223,15 +224,12 @@ justify-content:center;
 @media (min-width: 768px) and (max-width: 991.98px) {
   .cardCasa{
     justify-content:center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .colCasas{
-  width: 28%!important;
+  width: 45%!important;
 }
-.card{
-  width: 114%!important;
-}
-.filho{
+.card, .filho{
   width: 100%!important;
 }
   .containerServiços{
